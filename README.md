@@ -1,6 +1,6 @@
 # DeepJoin
 Code for "DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair." \
-Published at SIGGRAPH Asia 2022.
+Published at SIGGRAPH Asia 2022. \
 <img src="assets/three_shapes.gif" alt="example1" width="500"/> 
 
 <!-- <img src="assets/jar_2.gif" alt="example1" width="200"/> <img src="assets/mug_262.gif" alt="example1" width="200"/> <img src="assets/table_44.gif" alt="example1" width="200"/> -->
