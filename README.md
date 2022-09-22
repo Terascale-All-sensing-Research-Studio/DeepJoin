@@ -41,7 +41,7 @@ cd deepjoin
 ./scripts/infer_quick.sh experiments/mugs/specs.json ../example_files/fractured_mug.obj
 ```
 
-You should get a gif that looks like this one!
+You should get a gif that looks like this one! \
 <img src="assets/example_mug.gif" alt="example1" width="200"/>
 
 ## Data Preparation
