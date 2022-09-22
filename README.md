@@ -1,8 +1,10 @@
 # DeepJoin
+<img src="assets/three_shapes.gif" alt="example1" width="500"/> 
+
 Code for "DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair." \
 Published at SIGGRAPH Asia 2022.
 
-<img src="assets/jar_2.gif" alt="example1" width="200"/> <img src="assets/mug_262.gif" alt="example1" width="200"/> <img src="assets/table_44.gif" alt="example1" width="200"/> 
+<!-- <img src="assets/jar_2.gif" alt="example1" width="200"/> <img src="assets/mug_262.gif" alt="example1" width="200"/> <img src="assets/table_44.gif" alt="example1" width="200"/> -->
 
 ```
 citation placeholder
@@ -39,6 +41,9 @@ If you just want to try out inference, run the following script with the example
 cd deepjoin
 ./scripts/infer_quick.sh experiments/mugs/specs.json ../example_files/fractured_mug.obj
 ```
+
+You should get a gif that looks like this one!
+<img src="assets/example_mug.gif" alt="example1" width="200"/>
 
 ## Data Preparation
 

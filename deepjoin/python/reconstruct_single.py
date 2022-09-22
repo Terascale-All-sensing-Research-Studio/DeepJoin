@@ -544,7 +544,7 @@ if __name__ == "__main__":
                     num_renders=num_renders,
                     resolution=RESOLUTION,
                     zoom=ZOOM,
-                    bg_color=0,
+                    bg_color=255,
                 ),
                 loop=0,
                 duration=(1 / num_renders) * DURATION * 1000,
@@ -559,6 +559,6 @@ if __name__ == "__main__":
                     ],
                     resolution=RESOLUTION,
                     ztrans=ZOOM,
-                    bg_color=0,
+                    bg_color=255,
                 ),
             )
