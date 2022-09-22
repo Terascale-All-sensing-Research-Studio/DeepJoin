@@ -2,7 +2,7 @@
 Code for "DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair." \
 Published at SIGGRAPH Asia 2022.
 
-| <img src="assets/three_shapes_bef.gif" alt="example1" width="300"/> | <img src="assets/three_shapes_aft.gif" alt="example1" width="300"/> |
+| <img src="assets/three_shapes_bef2.gif" alt="example1" width="300"/> | <img src="assets/three_shapes_aft2.gif" alt="example1" width="300"/> |
 | :-: | :-: |
 | Input Fractured Objets | Repaired Objects using DeepJoin |
 
