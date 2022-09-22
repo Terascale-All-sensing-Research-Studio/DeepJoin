@@ -1,0 +1,70 @@
+{
+    "Description" : "Using OCC. Not using Normals. Learned Break." ,
+    "DataSource" : "$DATADIR/ShapeNetCore.v2",
+    "TrainSplit" : "$DATADIR/data_mugs_train.pkl",
+    "ValSplit" : "$DATADIR/data_mugs_val.pkl",
+    "TestSplit" : "$DATADIR/data_mugs_test.pkl",
+    "NetworkArch" : "decoder_z_lb_both_leaky_n_sdf",
+    "NetworkSpecs" : {
+        "dims" : [ 512, 512, 512, 512, 512, 512, 512, 512 ],
+        "dropout" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+        "dropout_prob" : 0.2,
+        "norm_layers" : [ 0, 1, 2, 3, 4, 5, 6, 7 ],
+        "latent_in" : [ 4 ],
+        "xyz_in_all" : false,
+        "use_tanh" : false,
+        "latent_dropout" : false,
+        "weight_norm" : true
+    },
+    "SubnetSpecs" : {
+        "subnet_dims" : [ 512, 512, 512, 512, 512 ],
+        "subnet_dropout" : [ 0, 1, 2, 3, 4 ],
+        "subnet_norm" : [ 0, 1, 2, 3, 4 ],
+        "subnet_xyz" : true
+    },
+    "CodeLength" : 128,
+    "BreakCodeLength" : 64,
+    "OneCodePerComplete" : false,
+    "NumEpochs" : 2001,
+    "SnapshotFrequency" : 200,
+    "AdditionalSnapshots" : [ ],
+    "LearningRateSchedule" : [
+    {
+        "Type" : "Step",
+        "Initial" : 0.0005,
+        "Interval" : 500,
+        "Factor" : 0.5
+    },
+    {
+        "Type" : "Step",
+        "Initial" : 0.001,
+        "Interval" : 500,
+        "Factor" : 0.5
+    },
+    {
+        "Type" : "Step",
+        "Initial" : 0.001,
+        "Interval" : 500,
+        "Factor" : 0.5
+    }],
+    "UseOccupancy" : false,
+    "UseNormals" : true,
+    "BreakLoss" : true,
+    "BRLoss" : true,
+    "SDFNormWarmup" : 1, 
+    "LambdaSDFLoss" : 10.0,
+    "LambdaNormLoss" : 1e-1,
+    "TestEvery" : 50,
+    "ValEvery" : 10,
+    "TestDimensions": [ 256, 256, 256 ],
+    "SamplesPerScene" : 16384,
+    "ScenesPerBatch" : 36,
+    "DataLoaderThreads" : 10,
+    "CodeBound" : 1.0,
+    "ClampingDistance" : 0.1,
+    "CodeRegularization" : true,
+    "CodeRegularizationLambda" : 1e-4,
+    "CodeRegularizationWarmup" : 100,
+    "UniformRatio": 0.2
+}
+
