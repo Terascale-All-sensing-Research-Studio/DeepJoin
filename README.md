@@ -18,6 +18,12 @@ Note that you need to have the following apt dependencies installed.
 sudo apt install python3.8-distutils python3.8-dev libgl1 libglew-dev freeglut3-dev
 ```
 
+Clone the repo.
+```bash
+https://github.com/Terascale-All-sensing-Research-Studio/DeepJoin.git
+cd DeepJoin
+```
+
 We recommend using virtualenv. The following snippet will create a new virtual environment, activate it, and install deps.
 ```bash
 sudo apt-get install virtualenv && \
