@@ -1,8 +1,6 @@
 source env/bin/activate
 if [ -f "constants.sh" ]; then
     source constants.sh
-else
-    echo "Constants file not found"
 fi
 if [[ x$DATADIR != "x" ]]; then
     echo "The primary data directory is located at: "$DATADIR
