@@ -4,7 +4,6 @@ import logging
 import trimesh
 import numpy as np
 from scipy.spatial import cKDTree as KDTree
-from pykdtree.kdtree import KDTree as pyKDTree
 
 from processor.process_sample import sample_points
 from processor.process_sdf2 import compute_sdf
@@ -34,7 +33,6 @@ def get_fracture_point_mask(
     broken_mesh,
     complete_mesh,
     pts,
-    use_pykdtree=False,
 ):
     """
     Return a mask that identifies points not in the fracture region.
@@ -58,10 +56,7 @@ def get_fracture_point_mask(
     assert b_pts.shape[0] == num_points
 
     # Find points that are closer to the fracture than the rest of the broken shape
-    if use_pykdtree:
-        _, inds = pyKDTree(b_pts).query(pts, k=1)
-    else:
-        _, inds = KDTree(b_pts).query(pts, k=1)
+    _, inds = KDTree(b_pts).query(pts, k=1)
     pts_not_fracture_mask = inds < b_not_fracture_inds.shape[0]
 
     return pts_not_fracture_mask
@@ -102,7 +97,6 @@ def partial_sdf(
         broken_mesh,
         complete_mesh,
         pts,
-        use_pykdtree=True,
     )
 
     # Save

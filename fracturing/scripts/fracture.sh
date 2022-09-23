@@ -21,7 +21,6 @@ if [ -z "$4" ]; then
 fi
 SUBSAMPLE="10000"
 NUMFRACTURETHREADS="3"
-NUMQUERYTHREADS="3"
 
 # Run 
 case $OPERATION in
@@ -74,7 +73,7 @@ case $OPERATION in
             process_sdf2 \
             --breaks "$NUMBREAKS" \
             --outoforder \
-            -t "$NUMQUERYTHREADS"
+            -t "$NUMFRACTURETHREADS"
         ;;
 
 	"5")
@@ -85,7 +84,7 @@ case $OPERATION in
             --breaks "$NUMBREAKS" \
             --outoforder \
             --test_only \
-            -t "$NUMQUERYTHREADS"
+            -t "$NUMFRACTURETHREADS"
         ;;
 
 	"6")
@@ -95,7 +94,7 @@ case $OPERATION in
             process_spline \
             --breaks "$NUMBREAKS" \
             --outoforder \
-            -t "$NUMQUERYTHREADS"
+            -t "$NUMFRACTURETHREADS"
         ;;
 
 	"7")

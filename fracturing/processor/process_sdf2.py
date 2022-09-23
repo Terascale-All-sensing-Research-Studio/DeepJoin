@@ -2,12 +2,9 @@ import os, argparse
 import logging
 import time
 
-# Set the available threads to (1/3)
-os.environ["OMP_NUM_THREADS"] = str(int(os.cpu_count() * (1 / 3)))
-
 import trimesh
 import numpy as np
-from pykdtree.kdtree import KDTree
+from scipy.spatial import cKDTree as KDTree
 
 try:
     from libmesh import check_mesh_contains

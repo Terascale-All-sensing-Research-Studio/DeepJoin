@@ -3,7 +3,7 @@ import logging
 
 import trimesh
 import numpy as np
-from pykdtree.kdtree import KDTree
+from scipy.spatial import cKDTree as KDTree
 
 try:
     import pymesh
