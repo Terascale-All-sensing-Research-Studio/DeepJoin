@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Geometric Breaks" />
+
+        <title>Geometric Breaks</title>
+        <!-- Bootstrap core CSS -->
+        <!--link href="bootstrap.min.css" rel="stylesheet"-->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+    </head>
+
+    <body style="padding-bottom: 100px;">
+
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container" align="center">
+                <h2>
+                    Geometric Breaks: A Dataset of Fractured Objects Generated Using Boolean Subtraction with Primitives
+                </h2>
+                <h4></h4>
+                <p>
+                    <a href="https://nikwl.github.io/">Nikolas Lamb</a>,
+                    <a href="https://docs.google.com/document/d/1Ee6Be9gR2qmjGu9X8PPQJYi2Wnwnv7BPE8-jgFFeJUo/edit">Sean Banerjee</a>, and
+                    <a href="https://docs.google.com/document/d/1DHxngxY1ZuI3Rcvfc8cJRhR-4Qflo7yMpdjomYNDfsU/edit">Natasha Banerjee</a>
+                    <br/>
+                    <a href="https://tars.clarkson.edu/">Terascale All-sensing Research Studio (TARS)</a> at Clarkson University, USA
+                </p>
+                <h5>
+                    <a href="mailto: lambne@clarkson.edu">[Data]</a>
+                    <br/>
+                    <a href="https://github.com/Terascale-All-sensing-Research-Studio/DeepJoin">[DeepJoin]</a>
+                    <a href="https://github.com/Terascale-All-sensing-Research-Studio/DeepMend">[DeepMend]</a>
+                    <a href="https://github.com/Terascale-All-sensing-Research-Studio/MendNet">[MendNet]</a>
+                    <a href="https://github.com/Terascale-All-sensing-Research-Studio/3D-Proxies-for-Broken-Objects">[3D-Proxies]</a>
+                    <!-- <br/> -->
+                    <!-- <a href="https://tars.clarkson.edu/">[Lab]</a> -->
+                </h5>
+            </div>
+        </div>
+
+        <div class="section">
+            <hr />
+            <div class="container">
+                <div align="center"><h2>Dataset</h2></div>
+                <p>
+                    Our dataset contains 25,449 from <a href="https://shapenet.org/">ShapeNet</a> and 1,042 objects from the <a href="https://app.gazebosim.org/GoogleResearch/fuel/collections/Scanned%20Objects%20by%20Google%20Research">Google Scanned Objects Dataset.</a> We synthetically fracture each object by subtracting a subdivided and randomized geometric primitive from the object mesh.
+                </p>
+            </div>
+            
+            <div class="container_img">
+                <p align="center">
+                    <img
+                        border="0"
+                        src="assets/example_breaks.png"
+                        style="width: 60%"
+                    />
+                </p>
+            </div>
+
+            <hr />
+            <div class="container">
+            <div align="center"><h2>Citing</h2></div>
+
+                <div align="left">
+                    <h5>If you use our dataset, cite our SIGGRAPH ASIA 2022 paper.</h5>
+                    <h6>[TOG 2022] DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair</h6>
+                    <code class="codeblock">
+                        @article{lamb2022deepjoin, <br>
+                            &emsp; author = {Lamb, N. and Banerjee, S. and Banerjee, N. K.}, <br>
+                            &emsp; title = {DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair}, <br>
+                            &emsp; year = {2022}, <br>
+                            &emsp; journal = {ACM Trans. Graph. (Proc. SIGGRAPH Asia)}, <br>
+                            &emsp; month = {jul}, <br>
+                        }
+                    </code>
+                    <br>
+                    <br>
+                    <h5>If you find our dataset helpful, please consider citing our other works!</h5>
+                    <h6>[ECCV 2022] DeepMend: Learning Occupancy Functions to Represent Shape for Repair</h6>
+                    <code class="codeblock">
+                        @inproceedings{lamb2022deepmend, <br>
+                            &emsp; title={DeepMend: Learning Occupancy Functions to Represent Shape for Repair}, <br>
+                            &emsp; author={Lamb, N. and Banerjee, S. and Banerjee, N. K.}, <br>
+                            &emsp; booktitle={European Conference on Computer Vision (ECCV)}, <br>
+                            &emsp; year={2022} <br> 
+                        }
+                    </code>
+                    <br>
+                    <br>
+                    <h6>[SCF 2022] MendNet: Restoration of Fractured Shapes Using Learned Occupancy Functions</h6>
+                    <code class="codeblock">
+                        @article {mendnet2022, <br>
+                            &emsp; journal = {Computer Graphics Forum}, <br>
+                            &emsp; title = {{MendNet: Restoration of Fractured Shapes Using Learned Occupancy Functions}}, <br>
+                            &emsp; author = {Lamb, Nikolas and Banerjee, Sean and Banerjee, Natasha K.}, <br>
+                            &emsp; year = {2022}, <br>
+                            &emsp; publisher = {The Eurographics Association and John Wiley & Sons Ltd.}, <br>
+                            &emsp; ISSN = {1467-8659}, <br>
+                            &emsp; DOI = {10.1111/cgf.14603} <br>
+                        }
+                    </code>
+                    <br>
+                    <br>
+                    <h6>[SCF 2021] Using Learned Visual and Geometric Features to Retrieve Complete 3D Proxies for Broken Objects</h6>
+                    <code class="codeblock">
+                        @inproceedings{lamb2021using, <br>
+                            &emsp; title={Using Learned Visual and Geometric Features to Retrieve Complete 3D Proxies for Broken Objects}, <br>
+                            &emsp; author={Lamb, Nikolas and Wiederhold, Noah and Lamb, Benjamin and Banerjee, Sean and Banerjee, Natasha Kholgade}, <br>
+                            &emsp; booktitle={Symposium on Computational Fabrication}, <br>
+                            &emsp; pages={1--15}, <br>
+                            &emsp; year={2021} <br>
+                          }
+                    </code>
+                </div>
+            </div>
+
+    </body>
+</html>
