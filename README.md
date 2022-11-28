@@ -1,13 +1,20 @@
 # DeepJoin
 Code for "DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair." \
-Published at SIGGRAPH Asia 2022.
+[[arXiv](https://arxiv.org/abs/2211.12400)] Published at SIGGRAPH Asia 2022.
 
 | <img src="assets/three_shapes_bef2.gif" alt="example1" width="300"/> | <img src="assets/three_shapes_aft2.gif" alt="example1" width="300"/> |
 | :-: | :-: |
 | Input | Output |
 
+If you find our work helpful please cite us:
 ```
-citation placeholder
+@article{lamb2022deepjoin,
+  author = {Lamb, N. and Banerjee, S. and Banerjee, N. K.},
+  title = {DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair},
+  year = {2022},
+  journal = {ACM Trans. Graph. (Proc. SIGGRAPH Asia)},
+  month = {jul},
+}
 ```
 
 ## Installation
