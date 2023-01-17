@@ -9,11 +9,14 @@ Code for "DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Fiel
 If you find our work helpful please cite us:
 ```
 @article{lamb2022deepjoin,
-  author={Lamb, Nikolas and Banerjee, Sean and Banerjee, Natasha Kholgade},
-  title = {DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair},
-  year = {2022},
-  journal = {ACM Trans. Graph. (Proc. SIGGRAPH Asia)},
-  month = {jul},
+  title={DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair},
+  author={Lamb, Nikolas and Banerjee, Sean and Banerjee, Natasha Kholgade},
+  journal={ACM Transactions on Graphics (TOG)},
+  volume={41},
+  number={6},
+  pages={1--10},
+  year={2022},
+  publisher={ACM New York, NY, USA}
 }
 ```
 
