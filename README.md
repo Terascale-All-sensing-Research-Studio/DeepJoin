@@ -9,7 +9,7 @@ Code for "DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Fiel
 If you find our work helpful please cite us:
 ```
 @article{lamb2022deepjoin,
-  author = {Lamb, N. and Banerjee, S. and Banerjee, N. K.},
+  author={Lamb, Nikolas and Banerjee, Sean and Banerjee, Natasha Kholgade},
   title = {DeepJoin: Learning a Joint Occupancy, Signed Distance, and Normal Field Function for Shape Repair},
   year = {2022},
   journal = {ACM Trans. Graph. (Proc. SIGGRAPH Asia)},
